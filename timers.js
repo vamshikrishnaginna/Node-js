@@ -31,10 +31,32 @@
 
 //SETINTERVAL() Method
 
-let num=0
-setInterval(() => {
-    num++;
-    console.log(num+ '.Hello for every 3 seconds');
+// let num=0
+// setInterval(() => {
+//     num++;
+//     console.log(num+ '.Hello for every 3 seconds');
     
     
-}, 3000);
+// }, 3000);
+
+//********************************************************************************************************** */
+
+//CHALLENGE-2
+//Print message "Hello World" - every second for 5 times 
+// Print "Done" and exit
+//constraints - you can't use setTimeout 
+
+let counter =0;
+
+const intervalId = setInterval( ()=>{
+
+    console.log('Hello world');
+    counter++;
+
+    if(counter==5)
+    {
+        console.log('Done');
+        clearInterval(intervalId);
+    }
+},
+1000);
