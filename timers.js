@@ -3,6 +3,7 @@
 // }
 // setTimeout(func, 4*1000);
 
+//****************************************************************************************************************** */
 //For: func(arg1,agr2,agr3,.....)
 //We can use: setTimeOut(func, delay, arg1, agr2, agr3,...)
 
@@ -12,15 +13,28 @@
 
 // setTimeout(rocks, 4*1000, 'Vamshi');
 
+
+//******************************************************************************************************************** */
 //CHALLENGE
 //Hello after 4 seconds
 //Hello after 8 seconds
 
-const func=(secs)=>{
-    console.log('Hello after '+secs+' seconds');
+// const func=(secs)=>{
+//     console.log('Hello after '+secs+' seconds');
   
-}
+// }
 
-setTimeout(func, 4*1000, 4 );
-setTimeout(func, 8*1000, 8 );
+// setTimeout(func, 4*1000, 4 );
+// setTimeout(func, 8*1000, 8 );
 
+//******************************************************************************************************************** */
+
+//SETINTERVAL() Method
+
+let num=0
+setInterval(() => {
+    num++;
+    console.log(num+ '.Hello for every 3 seconds');
+    
+    
+}, 3000);
